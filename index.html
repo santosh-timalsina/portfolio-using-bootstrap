@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hello</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#name">Santosh</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.google.com">Google</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero d-flex flex-column justify-content-center align-items-center vh-100 text-white bg-dark"
+    >
+      <div class="image mb-4">
+        <img
+          src="image/background3-removebg-preview (2).png"
+          alt="error"
+          class="rounded-circle border border-danger"
+          style="width: 200px; height: 200px"
+        />
+      </div>
+      <div class="buttons">
+        <button
+          class="btn btn-primary"
+          onclick="document.querySelector('#skills').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Skills
+        </button>
+        <button
+          class="btn btn-secondary"
+          onclick="document.querySelector('#project').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Projects
+        </button>
+        <button
+          class="btn btn-info"
+          onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });"
+        >
+          Contact
+        </button>
+      </div>
+    </div>
+
+    <section id="skills" class="py-5 bg-secondary text-white">
+      <div class="container text-center">
+        <h2 class="mb-5">Skills</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="skills-item p-3 bg-dark rounded">
+              <h3>Skill 1</h3>
+              <p>Description of skill 1.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills-item p-3 bg-dark rounded">
+              <h3>Skill 2</h3>
+              <p>Description of skill 2.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="skills-item p-3 bg-dark rounded">
+              <h3>Skill 3</h3>
+              <p>Description of skill 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="py-5 bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-5">Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="project-item p-3 bg-secondary rounded">
+              <img
+                src="path/to/project1.jpg"
+                alt="Project 1"
+                class="img-fluid rounded mb-3"
+              />
+              <h3>Project 1</h3>
+              <p>Description of project 1.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-item p-3 bg-secondary rounded">
+              <img
+                src="path/to/project2.jpg"
+                alt="Project 2"
+                class="img-fluid rounded mb-3"
+              />
+              <h3>Project 2</h3>
+              <p>Description of project 2.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project-item p-3 bg-secondary rounded">
+              <img
+                src="path/to/project3.jpg"
+                alt="Project 3"
+                class="img-fluid rounded mb-3"
+              />
+              <h3>Project 3</h3>
+              <p>Description of project 3.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-secondary text-white">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact</h2>
+        <div
+          class="contact-form bg-dark p-4 rounded mx-auto"
+          style="max-width: 600px"
+        >
+          <div class="form-group">
+            <label for="name"><i class="bx bx-user"></i> Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email"><i class="bx bx-envelope"></i> Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message"><i class="bx bx-message"></i> Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Your message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            Send Message
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+      <div class="container">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+      </div>
+  </body>
+</html>
